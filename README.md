@@ -1,1 +1,1 @@
-about this app
+This is a music system.
