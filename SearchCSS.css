@@ -2,7 +2,7 @@ body {
   background-image: url(Image_01.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  filter: opacity();
+  
 }
 
 
@@ -33,7 +33,6 @@ body {
   font-family: 'Times New Roman';
   font-size: 25px;
   color: rgb(22, 22, 92);
-  //margin: 277px 0 0 5px;
 }
 
 
