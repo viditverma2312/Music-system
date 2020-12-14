@@ -1,44 +1,50 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Muzik System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="TrackPlayCSS.css">
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzik System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="TrackPlayCSS.css">
   </head>
   <body>
+    <div class="music-system">
 
-    <div class="player">
-      <div class="image"></div>
-      <div class="song">Song</div>
-      <div class="singer">Singer</div>
+      <div class="songInfo">
+        <div class="image"></div>
+        <div class="song">Song</div>
+        <div class="singer">Singer</div>
+      </div>
+
+      <div class="button">
+        <div class="prev" onclick="prev()">
+          <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+
+        <div class="play-pause" onclick="play_pause()">
+          <i class="fa fa-play-circle fa-4x"></i>
+        </div>
+
+        <div class="next" onclick="next()">
+          <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="sliders">
+        <div class="seek">
+          <div class="start-time">00:00</div>
+          <input type="range" class="seek-slider" min="0" max="100" value="0" onchange="seek()">
+          <div class="end-time">00:00</div>
+        </div>
+
+        <div class="volume">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" class="volume-slider" min="1" max="100" value="50" onchange="volume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+      </div>
+
     </div>
 
-    <div class="button">
-      <div class="prev" onclick="prev()">
-        <i class="fa fa-step-backward fa-2x"></i>
-      </div>
-
-      <div class="play-pause" onclick="play_pause()">
-        <i class="fa fa-play-circle fa-4x"></i>
-      </div>
-
-      <div class="next" onclick="next()">
-        <i class="fa fa-step-forward fa-2x"></i>
-      </div>
-    </div>
-
-    <div class="sliders">
-      <div class="seek">
-        <div class="start-time">00:00</div>
-        <input type="range" class="seek-slider" min="0" max="100" value="0" onchange="seek()">
-        <div class="end-time">00:00</div>
-      </div>
-
-      <div class="volume">
-        <i class="fa fa-volume-down"></i>
-        <input type="range" class="volume-slider" min="1" max="100" value="50" onchange="volume()">
-        <i class="fa fa-volume-up"></i>
-      </div>
-    </div>
   </body>
 </html>
