@@ -1,0 +1,137 @@
+body { 
+  background-color: rgb(169, 178, 224); 
+  
+  transition: background-color .5s; 
+  } 
+  
+
+  .music-system { 
+  height: 95vh; 
+  display: flex; 
+  align-items: center; 
+  flex-direction: column; 
+  justify-content: center; 
+  } 
+  
+
+  .songInfo { 
+  display: flex; 
+  align-items: center; 
+  flex-direction: column; 
+  justify-content: center; 
+  margin-top: 25px; 
+  } 
+  
+
+  .image { 
+  margin: 25px; 
+  height: 250px; 
+  width: 250px; 
+  background-image: URL( 
+    "https://source.unsplash.com/Qrspubmx6kE/640x360"); 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 15%; 
+  } 
+  
+  
+  .song { 
+  font-size: 3rem; 
+  } 
+
+  
+  .singer { 
+  font-size: 1.5rem; 
+  } 
+
+  
+  .button { 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  } 
+
+  
+  .play-pause, 
+  .previous, 
+  .next { 
+  padding: 25px; 
+  opacity: 0.8; 
+
+  transition: opacity .2s; 
+  } 
+  
+
+  
+  .play-pause:hover, 
+  .previous:hover, 
+  .next:hover,
+  .seek-slider:hover, 
+  .volume-slider:hover { 
+  opacity: 1.0; 
+  } 
+  
+
+  .sliders { 
+  width: 75%; 
+  max-width: 400px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  } 
+
+  
+  .seek-slider, .volume-slider { 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  height: 5px; 
+  background: black; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s; 
+  } 
+  
+
+  .seek-slider::-webkit-slider-thumb, 
+  .volume-slider::-webkit-slider-thumb { 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  width: 15px; 
+  height: 15px; 
+  background: white; 
+  cursor: pointer; 
+  border-radius: 50%; 
+  } 
+  
+  
+  .seek-slider { 
+  width: 60%; 
+  } 
+
+  
+  .volume-slider { 
+  width: 30%; 
+  } 
+
+  
+  .start-time, 
+  .end-time { 
+  padding: 10px; 
+  } 
+
+  
+  i.fa-volume-down, 
+  i.fa-volume-up { 
+  padding: 10px; 
+  } 
+
+  
+  i.fa-play-circle, 
+  i.fa-pause-circle, 
+  i.fa-step-forward, 
+  i.fa-step-backward { 
+  cursor: pointer; 
+  } 
+  

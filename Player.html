@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzik System</title> 
+  <link rel="stylesheet"
+		href= 
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="PlayerCSS.css"> 
+</head> 
+<body> 
+  <div class="music-system"> 
+
+    <div class="songInfo"> 
+      <!-- <div class="now-playing">PLAYING x OF y</div>  -->
+      <div class="image"></div> 
+      <div class="song">Song</div> 
+      <div class="singer">Singer</div> 
+    </div> 
+
+    <div class="button"> 
+      <div class="previous" onclick="previous()"> 
+        <i class="fa fa-step-backward fa-2x"></i> 
+      </div> 
+
+      <div class="play-pause" onclick="play-pause()"> 
+        <i class="fa fa-play-circle fa-4x"></i> 
+      </div> 
+
+      <div class="next" onclick="next()"> 
+        <i class="fa fa-step-forward fa-2x"></i> 
+      </div> 
+    </div> 
+
+    <div class="sliders"> 
+      <div class="start-time">00:00</div> 
+      <input type="range" min="1" max="100"
+        value="0" class="seek-slider" onchange="seekTo()"> 
+      <div class="end-time">00:00</div> 
+    </div> 
+
+    <div class="sliders"> 
+      <i class="fa fa-volume-down"></i> 
+      <input type="range" min="1" max="100"
+        value="50" class="volume-slider" onchange="setVolume()"> 
+      <i class="fa fa-volume-up"></i> 
+    </div> 
+  </div> 
+
+  <script src="main.js"></script> 
+</body> 
+</html> 
