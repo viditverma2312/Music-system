@@ -81,8 +81,10 @@ function resetValues() {
 loadTrack(track_index);
 
 function playPause() {
-  if (!isPlaying) playTrack();
-  else pauseTrack();
+  if (!isPlaying) 
+    playTrack();
+  else 
+    pauseTrack();
 }
 
 function playTrack() {
