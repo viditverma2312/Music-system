@@ -39,6 +39,12 @@ let track_list = [
     image: "https://images.pexels.com/photos/1717969/pexels-photo-1717969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=250&w=250",
     path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
   },
+  {
+    name: "Autumn",
+    artist: "",
+    image: "https://hosseinghanbari.ir/other/music-player/autumn.jpg",
+    path: "https://hosseinghanbari.ir/other/music-player/autumn.mp3"
+  }
 ];
 
 function random_bg_color() {
@@ -116,12 +122,12 @@ function previous() {
 }
 
 function seek() {
-  seekto = curr_track.duration * (seek_slider.value / 100);
+  seekto = curr_track.duration * (seekSlider.value / 100);
   curr_track.currentTime = seekto;
 }
 
 function setVolume() {
-  curr_track.volume = volume_slider.value / 100;
+  curr_track.volume = volumeSlider.value / 100;
 }
 
 function seekUpdate() {
