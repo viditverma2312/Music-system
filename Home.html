@@ -1,14 +1,43 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
   <title>Search page</title>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" href="HomeCSS.css">
 </head>
+
+<style>
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    margin: 15px;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+</style>
+
+
 <body>
   <h1 class="heading"><i class="fa fa-drum"></i> MuziK Box <i class="fa fa-drum"></i></h1>
   <form id="form1">
@@ -17,14 +46,38 @@
     </p>
   </form>
 
+
+  <div class="card-container">
+
+  </div>
+
+ 
+
+
   <!-- <div class="suggestions">
     Suggestions
   </div>
 
   <div class="suggestions_box"></div> -->
+  <script src="search.js"></script>
   <script src="HomeJS.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+<!--how to shift placeholder text to line border on click in the box-->
+<!--git add filename_with_ext   || git add .-->
+<!--git commit -m-->
+<!--git push-->
+
+<!-- https://codepen.io/MilanMilosev/pen/JdgRpB 
+      
+      check it-->
 
 
 
