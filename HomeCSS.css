@@ -1,9 +1,9 @@
-/* body {
-  background-image: url(Image_01.png);
+body {
+  background-image: url(Image_02.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   
-} */
+}
 
 .heading {
   font-family: cursive;
@@ -18,7 +18,7 @@
 }
 
 html, body {
-  background: #34addb;
+  /* background: #34addb; */
   color: #fff;
   padding: 24px;
   position: relative;
